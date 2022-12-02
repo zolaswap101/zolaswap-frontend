@@ -1,1 +1,1 @@
-# Wagyuswap App
+# ZolaSwap App
