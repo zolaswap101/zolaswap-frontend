@@ -1,7 +1,7 @@
 // Set of helper functions to facilitate wallet setup
 
 import { BASE_BSC_SCAN_URL, BASE_URL } from 'config'
-import { ZOLA_LP_SYMBOL } from 'config/constants'
+import { WAG_LP_SYMBOL } from 'config/constants'
 import { nodes } from './getRpcUrl'
 import getTokenLogoURL from './getTokenLogoURL'
 
@@ -22,7 +22,7 @@ export const setupNetwork = async () => {
             chainName: chainId === 137 ? 'POLYGON' : 'POLYGON Testnet',
             nativeCurrency: {
               name: 'MATIC',
-              symbol: 'vlx',
+              symbol: 'matic',
               decimals: 18,
             },
             rpcUrls: nodes,
@@ -58,7 +58,7 @@ export const registerToken = async (tokenAddress: string, tokenSymbol: string, t
         symbol: tokenSymbol,
         decimals: tokenDecimals,
         // image: `${BASE_URL}/images/tokens/${tokenAddress}.png`,
-        image: tokenSymbol === ZOLA_LP_SYMBOL ? '' : getTokenLogoURL(tokenAddress),
+        image: tokenSymbol === WAG_LP_SYMBOL ? '' : getTokenLogoURL(tokenAddress),
       },
     },
   })

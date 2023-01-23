@@ -68,7 +68,7 @@ const TooltipContent = ({ blockNumber, t }: { blockNumber: number; t: ContextApi
       {t('Block %num%', { num: blockNumber })}
     </Text>
     <Link external href={getVelasScanLink(blockNumber, 'block')}>
-      {t('View on Velas Explorer')}
+      {t('View on Velascan')}
     </Link>
   </>
 )

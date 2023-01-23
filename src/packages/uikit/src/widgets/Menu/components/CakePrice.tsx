@@ -12,7 +12,7 @@ const PriceLink = styled.a`
   display: flex;
   align-items: center;
   svg {
-    transition: transform 0.6s;
+    transition: transform 0.3s;
   }
   :hover {
     svg {
@@ -28,10 +28,10 @@ const ImgWrapper = styled.img`
 const CakePrice: React.FC<Props> = ({ cakePriceUsd }) => {
   return cakePriceUsd ? (
     <PriceLink
-      href="https://zolaswap.finance/swap?outputCurrency=0x8a226293bC6f697A681B0b29f825c149655fEC2d"
+      href="https://exchange.wagyuswap.app/swap?outputCurrency=0xabf26902fd7b624e0db40d31171ea9dddf078351"
       target="_blank"
     >
-      <ImgWrapper alt="logo" className="mr-24" src="/images/tokens/zolaswap.png" />
+      <ImgWrapper alt="logo" className="mr-24" src="/images/logo.png" />
       <Text color="textSubtle" bold>{`$${cakePriceUsd}`}</Text>
     </PriceLink>
   ) : (

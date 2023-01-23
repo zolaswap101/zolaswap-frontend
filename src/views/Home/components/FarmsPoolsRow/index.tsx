@@ -51,11 +51,11 @@ const FarmsPoolsRow = () => {
 
   const getPoolText = (pool: DeserializedPool) => {
     if (pool.isAutoVault) {
-      return t('Auto ZOLA')
+      return t('Auto WAG')
     }
 
     if (pool.sousId === 0) {
-      return t('Manual ZOLA')
+      return t('Manual WAG')
     }
 
     return t('Stake %stakingSymbol% - Earn %earningSymbol%', {

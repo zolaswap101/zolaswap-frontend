@@ -83,6 +83,6 @@ export const useCakeBusdPrice = (): Price | undefined => {
 }
 
 export const useBNBBusdPrice = (): Price | undefined => {
-  const bnbBusdPrice = useBUSDPrice(tokens.wmatic)
+  const bnbBusdPrice = useBUSDPrice(tokens.WMATIC)
   return bnbBusdPrice
 }

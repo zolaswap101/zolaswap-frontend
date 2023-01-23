@@ -75,16 +75,16 @@ const IfoSteps: React.FC<Props> = ({ ifo, walletIfoData }) => {
         return (
           <CardBody>
             <Heading as="h4" color="secondary" mb="16px">
-              {t('Get ZOLA-BNB LP Tokens')}
+              {t('Get WAG-BNB LP Tokens')}
             </Heading>
             <Text color="textSubtle" small>
-              {t('Stake ZOLA and BNB in the liquidity pool to get LP tokens.')} <br />
+              {t('Stake WAG and BNB in the liquidity pool to get LP tokens.')} <br />
               {t('You’ll spend them to buy IFO sale tokens.')}
             </Text>
             <Button
               as={Link}
               external
-              href={`${BASE_ADD_LIQUIDITY_URL}/MATIC/0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82`}
+              href={`${BASE_ADD_LIQUIDITY_URL}/VLX/0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82`}
               endIcon={<OpenNewIcon color="white" />}
               mt="16px"
             >
@@ -112,7 +112,7 @@ const IfoSteps: React.FC<Props> = ({ ifo, walletIfoData }) => {
             </Heading>
             <Text color="textSubtle" small>
               {t(
-                'After the IFO sales finish, you can claim any IFO tokens that you bought, and any unspent ZOLA-BNB LP tokens will be returned to your wallet.',
+                'After the IFO sales finish, you can claim any IFO tokens that you bought, and any unspent WAG-BNB LP tokens will be returned to your wallet.',
               )}
             </Text>
           </CardBody>

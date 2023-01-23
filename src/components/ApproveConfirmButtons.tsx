@@ -25,6 +25,7 @@ const StyledApproveConfirmButtonRow = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
+
   ${({ theme }) => theme.mediaQueries.md} {
     grid-template-columns: 1fr 24px 1fr;
   }
@@ -32,6 +33,7 @@ const StyledApproveConfirmButtonRow = styled.div`
 
 const Button = styled(UIKitButton)`
   width: 100%;
+
   ${({ theme }) => theme.mediaQueries.md} {
     min-width: 160px;
   }
@@ -41,6 +43,7 @@ const iconAttrs = { width: '24px', color: 'textDisabled' }
 
 const ChevronRight = styled(ChevronRightIcon).attrs(iconAttrs)`
   display: none;
+
   ${({ theme }) => theme.mediaQueries.md} {
     display: block;
   }
@@ -48,6 +51,7 @@ const ChevronRight = styled(ChevronRightIcon).attrs(iconAttrs)`
 
 const ChevronBottom = styled(ChevronDownIcon).attrs(iconAttrs)`
   display: block;
+
   ${({ theme }) => theme.mediaQueries.md} {
     display: none;
   }

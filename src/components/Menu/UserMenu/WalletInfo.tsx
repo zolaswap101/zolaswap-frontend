@@ -35,13 +35,13 @@ const WalletInfo: React.FC<WalletInfoProps> = ({ hasLowBnbBalance, onDismiss }) 
       {hasLowBnbBalance && (
         <Message variant="warning" mb="24px">
           <Box>
-            <Text fontWeight="bold">{t('MATIC Balance Low')}</Text>
-            <Text as="p">{t('You need MATIC for transaction fees.')}</Text>
+            <Text fontWeight="bold">{t('VLX Balance Low')}</Text>
+            <Text as="p">{t('You need VLX for transaction fees.')}</Text>
           </Box>
         </Message>
       )}
       <Flex alignItems="center" justifyContent="space-between">
-        <Text color="textSubtle">{t('MATIC Balance')}</Text>
+        <Text color="textSubtle">{t('VLX Balance')}</Text>
         {fetchStatus !== FetchStatus.SUCCESS ? (
           <Skeleton height="22px" width="60px" />
         ) : (
@@ -49,7 +49,7 @@ const WalletInfo: React.FC<WalletInfoProps> = ({ hasLowBnbBalance, onDismiss }) 
         )}
       </Flex>
       <Flex alignItems="center" justifyContent="space-between" mb="24px">
-        <Text color="textSubtle">{t('ZOLA Balance')}</Text>
+        <Text color="textSubtle">{t('WAG Balance')}</Text>
         {cakeFetchStatus !== FetchStatus.SUCCESS ? (
           <Skeleton height="22px" width="60px" />
         ) : (
@@ -57,7 +57,7 @@ const WalletInfo: React.FC<WalletInfoProps> = ({ hasLowBnbBalance, onDismiss }) 
         )}
       </Flex>
       <Flex alignItems="center" justifyContent="end" mb="24px">
-        <LinkExternal href={getVelasScanLink(account, 'address')}>{t('View on Velas Explorer')}</LinkExternal>
+        <LinkExternal href={getVelasScanLink(account, 'address')}>{t('View on Velascan')}</LinkExternal>
       </Flex>
       <Button variant="secondary" width="100%" onClick={handleLogout}>
         {t('Disconnect Wallet')}

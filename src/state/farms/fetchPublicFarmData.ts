@@ -1,5 +1,5 @@
 import BigNumber from 'bignumber.js'
-import masterchefABI from 'config/abi/ZOLAFarm.json'
+import masterchefABI from 'config/abi/ZOHLAFarm.json'
 import erc20 from 'config/abi/erc20.json'
 import { getAddress, getMasterChefAddress } from 'utils/addressHelpers'
 import { BIG_TEN, BIG_ZERO } from 'utils/bigNumber'

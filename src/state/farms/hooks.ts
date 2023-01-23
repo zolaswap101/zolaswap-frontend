@@ -8,7 +8,7 @@ import { getBalanceAmount } from 'utils/formatBalance'
 import { farmsConfig } from 'config/constants'
 import useRefresh from 'hooks/useRefresh'
 import { deserializeToken } from 'state/user/hooks/helpers'
-import { MATIC_USDC_LP_PID } from 'config/constants/farms'
+import { MATIC_ZOHLA_LP_PID } from 'config/constants/farms'
 import { fetchFarmsPublicDataAsync, fetchFarmUserDataAsync, nonArchivedFarms } from '.'
 import { State, SerializedFarm, DeserializedFarmUserData, DeserializedFarm, DeserializedFarmsState } from '../types'
 
@@ -75,8 +75,8 @@ export const usePollFarmsWithUserData = (includeArchive = false) => {
 
 /**
  * Fetches the "core" farm data used globally
- * 251 = MATIC-ZOLA LP
- * 252 = BUSD-BNB LP
+ * 251 = ZOHLA-MATIC LP
+ * 252 = USDC-MATIC LP
  */
 export const usePollCoreFarmData = () => {
   const dispatch = useAppDispatch()
@@ -146,7 +146,7 @@ export const useLpTokenPrice = (symbol: string) => {
 // /!\ Deprecated , use the BUSD hook in /hooks
 
 export const usePriceCakeBusd = (): BigNumber => {
-  const cakeBnbFarm = useFarmFromPid(MATIC_USDC_LP_PID)
+  const cakeBnbFarm = useFarmFromPid(MATIC_ZOHLA_LP_PID)
   const cakePriceBusdAsString = cakeBnbFarm.tokenPriceUsdt
 
   const cakePriceBusd = useMemo(() => {

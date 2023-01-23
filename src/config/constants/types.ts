@@ -10,7 +10,7 @@ export type TranslatableText =
       }
     }
 export interface Address {
-  80001?: string
+80001?: string
   137: string
 }
 

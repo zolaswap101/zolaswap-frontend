@@ -46,7 +46,7 @@ const Footer = () => {
           </ButtonMenuItem>
         </ButtonMenu>
         <LinkExternal
-          href="https://www.binance.org/en/bridge?utm_source=ZolaSwap"
+          href="https://www.binance.org/en/bridge?utm_source=WagyuSwap"
           ml={[0, 0, '40px']}
           mt={['20px', '20px', 0]}
           mb={['8px', '8px', 0]}
@@ -61,13 +61,7 @@ const Footer = () => {
         justifyContent={['center', 'center', 'center', 'flex-end']}
       >
         <BubbleWrapper>
-          <Button
-            id="clickExchangeHelp"
-            as="a"
-            external
-            href="https://docs.zolaswap.finance/zolaswap/"
-            variant="subtle"
-          >
+          <Button id="clickExchangeHelp" as="a" external href="https://docs.wagyuswap.app/wagyuswap/" variant="subtle">
             {t('Need help ?')}
           </Button>
           <Svg viewBox="0 0 16 16">

@@ -1,5 +1,5 @@
 import poolsConfig from 'config/constants/pools'
-import sousChefABI from 'config/abi/ZOLAStakingPoolInitializable.json'
+import sousChefABI from 'config/abi/ZOHLAStakingPoolInitializable.json'
 import erc20ABI from 'config/abi/erc20.json'
 import multicall from 'utils/multicall'
 import { getMasterchefContract } from 'utils/contractHelpers'
@@ -9,8 +9,8 @@ import BigNumber from 'bignumber.js'
 
 // Pool 0, Cake / Cake is a different kind of contract (master chef)
 // BNB pools use the native BNB token (wrapping ? unwrapping is done at the contract level)
-const nonBnbPools = poolsConfig.filter((pool) => pool.stakingToken.symbol !== 'MATIC')
-const bnbPools = poolsConfig.filter((pool) => pool.stakingToken.symbol === 'MATIC')
+const nonBnbPools = poolsConfig.filter((pool) => pool.stakingToken.symbol !== 'VLX')
+const bnbPools = poolsConfig.filter((pool) => pool.stakingToken.symbol === 'VLX')
 const nonMasterPools = poolsConfig.filter((pool) => pool.sousId !== 0)
 const masterChefContract = getMasterchefContract()
 

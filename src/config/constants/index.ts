@@ -2,8 +2,7 @@ import { ChainId, JSBI, Percent, Token } from '@wagyu-swap/sdk'
 import { mainnetTokens, testnetTokens } from './tokens'
 import addresses from './addresses.json'
 
-// export const ROUTER_ADDRESS = addresses[process.env.REACT_APP_CHAIN_ID].ZolaRouter
-export const ROUTER_ADDRESS = addresses[137].ZolaRouter
+export const ROUTER_ADDRESS = addresses[process.env.REACT_APP_CHAIN_ID].WagyuRouter
 
 // a list of tokens by chain
 type ChainTokenList = {
@@ -15,11 +14,8 @@ export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
   [ChainId.MAINNET]: [
     mainnetTokens.wmatic,
     mainnetTokens.cake,
-    mainnetTokens.usdc,
     mainnetTokens.usdt,
-    mainnetTokens.aave,
-    mainnetTokens.shib,
-    mainnetTokens.kom,
+    mainnetTokens.usdc,
   ],
   [ChainId.TESTNET]: [testnetTokens.wmatic, testnetTokens.cake],
 }
@@ -43,31 +39,13 @@ export const CUSTOM_BASES: { [chainId in ChainId]?: { [tokenAddress: string]: To
 
 // used for display in the default list when adding liquidity
 export const SUGGESTED_BASES: ChainTokenList = {
-  [ChainId.MAINNET]: [
-    mainnetTokens.wmatic,
-    mainnetTokens.lazermoon,
-    mainnetTokens.usdc,
-    mainnetTokens.matic,
-    mainnetTokens.cake,
-  ],
+  [ChainId.MAINNET]: [mainnetTokens.usdt, mainnetTokens.cake, mainnetTokens.wmatic],
   [ChainId.TESTNET]: [testnetTokens.wmatic, testnetTokens.cake],
 }
 
 // used to construct the list of all pairs we consider by default in the frontend
 export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
-  [ChainId.MAINNET]: [
-    mainnetTokens.wmatic,
-    mainnetTokens.usdc,
-    mainnetTokens.cake,
-    mainnetTokens.wmatic,
-    mainnetTokens.quick,
-    mainnetTokens.lazermoon,
-    mainnetTokens.shib,
-    mainnetTokens.kom,
-    mainnetTokens.banana,
-    mainnetTokens.aave,
-    mainnetTokens.usdt,
-  ],
+  [ChainId.MAINNET]: [mainnetTokens.wmatic, mainnetTokens.usdt, mainnetTokens.usdc],
   [ChainId.TESTNET]: [testnetTokens.wmatic, testnetTokens.cake],
 }
 
@@ -116,5 +94,5 @@ export { default as farmsConfig } from './farms'
 export { default as poolsConfig } from './pools'
 export { default as ifosConfig } from './ifo'
 
-export const ZOLA_LP_SYMBOL = 'ZolaSwap-LP'
-export const ZOLA_LP_DECIMALS = 18
+export const WAG_LP_SYMBOL = 'Zohla-LP'
+export const WAG_LP_DECIMALS = 18

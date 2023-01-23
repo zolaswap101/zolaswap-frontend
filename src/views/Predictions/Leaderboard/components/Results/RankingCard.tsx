@@ -77,7 +77,7 @@ const RankingCard: React.FC<RankingCardProps> = ({ rank, user }) => {
           >
             <SubMenuItem onClick={onPresentWalletStatsModal}>{t('View Stats')}</SubMenuItem>
             <SubMenuItem as={Link} href={getVelasScanLink(user.id, 'address')} bold={false} color="text" external>
-              {t('View on Velas Explorer')}
+              {t('View on Velascan')}
             </SubMenuItem>
           </SubMenu>
         </Flex>

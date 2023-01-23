@@ -82,7 +82,7 @@ function TransactionSubmittedContent({
           <Text fontSize="20px">{t('Transaction Submitted')}</Text>
           {chainId && hash && (
             <Link external small href={getVelasScanLink(hash, 'transaction', chainId)}>
-              {t('View on Polygon Explorer')}
+              {t('View on Velascan')}
             </Link>
           )}
           {currencyToAdd && library?.provider?.isMetaMask && (

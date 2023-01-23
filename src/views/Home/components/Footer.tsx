@@ -66,18 +66,18 @@ const BottomRightImgWrapper = styled(Flex)`
 const topLeftImage = {
   path: '/images/home/flying-pancakes/',
   attributes: [
-    { src: '1-bottom', alt: 'Wagyuswap flying on the bottom' },
-    { src: '1-left', alt: 'Wagyuswap flying on the left' },
-    { src: '1-top', alt: 'Wagyuswap flying on the top' },
+    { src: '1-bottom', alt: 'ZohlaSwap flying on the bottom' },
+    { src: '1-left', alt: 'Zohlaswap flying on the left' },
+    { src: '1-top', alt: 'Zohlaswap flying on the top' },
   ],
 }
 
 const bottomRightImage = {
   path: '/images/home/flying-pancakes/',
   attributes: [
-    { src: '2-bottom', alt: 'Wagyuswap flying on the bottom' },
-    { src: '2-top', alt: 'Wagyuswap flying on the top' },
-    { src: '2-right', alt: 'Wagyuswap flying on the right' },
+    { src: '2-bottom', alt: 'ZohlaSwap flying on the bottom' },
+    { src: '2-top', alt: 'ZohlaSwap flying on the top' },
+    { src: '2-right', alt: 'Zohlaswap flying on the right' },
   ],
 }
 
@@ -111,7 +111,7 @@ const Footer = () => {
           {t('No registration needed.')}
         </Text>
 
-        <Link external href="https://docs.wagyuswap.app/wagyuswap/">
+        <Link external href="https://docs.zolaswap.finance/zolaswap/">
           {t('Learn how to start')}
         </Link>
         {!account && <ConnectWalletButton mt="24px" />}

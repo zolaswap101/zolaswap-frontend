@@ -52,8 +52,8 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
   const isAbsoluteUrl = href.startsWith('http')
   const innerLogo = (
     <>
-      <img alt="logo mobile" className="mobile-icon" src="/images/zz-logo.png" />
-      <img alt="logo desktop" className="desktop-icon" src="/images/zolaswap-text.png" />
+      <img alt="logo mobile" className="mobile-icon" src="/images/logo.png" />
+      <img alt="logo desktop" className="desktop-icon" src="/images/logo_desktop.svg" />
     </>
   )
 
@@ -68,11 +68,11 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
       </MenuButton>
       {isAbsoluteUrl ? (
         // @ts-ignore
-        <StyledLink as="a" href={href} aria-label="Zolaswap home page">
+        <StyledLink as="a" href={href} aria-label="Wagyuswap home page">
           {innerLogo}
         </StyledLink>
       ) : (
-        <StyledLink to={href} aria-label="Zolaswap home page">
+        <StyledLink to={href} aria-label="Wagyuswap home page">
           {innerLogo}
         </StyledLink>
       )}

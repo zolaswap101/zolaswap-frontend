@@ -32,7 +32,7 @@ const useGetProfileCosts = () => {
           numberCakeToUpdate,
         })
       } catch (error) {
-        toastError(t('Error'), t('Could not retrieve ZOLA costs for profile'))
+        toastError(t('Error'), t('Could not retrieve ZOHLA costs for profile'))
       }
     }
 

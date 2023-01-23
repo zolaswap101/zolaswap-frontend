@@ -46,11 +46,11 @@ export const links = [
     icon: 'PoolIcon',
     href: '/syrup',
   },
-  {
-    label: 'Lottery',
-    icon: 'TicketIcon',
-    href: '/lottery',
-  },
+  // {
+  //   label: 'Lottery',
+  //   icon: 'TicketIcon',
+  //   href: '/lottery',
+  // },
   {
     label: 'NFT',
     icon: 'NftIcon',
@@ -141,14 +141,19 @@ export const links = [
 
 export const socials = [
   {
+    label: 'Telegram',
+    icon: 'TelegramIcon',
+    href: 'http://t.me/wagyuswapofficial',
+  },
+  {
     label: 'Medium',
     icon: 'MediumIcon',
-    href: 'https://medium.com/@zolaswap.app',
+    href: 'https://medium.com/@wagyuswap.app',
   },
   {
     label: 'Twitter',
     icon: 'TwitterIcon',
-    href: 'https://twitter.com/zolacoin1',
+    href: 'https://twitter.com/WagyuSwap_app',
   },
 ]
 

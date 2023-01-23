@@ -11,12 +11,12 @@ const priceHelperLps: SerializedFarmConfig[] = [
    */
   {
     pid: null,
-    lpSymbol: 'MATIC-WMATIC LP',
+    lpSymbol: 'ZOHLA-WVLX LP',
     lpAddresses: {
-      80001: '',
+    80001: '',
       137: '0xE0fCB98a83D8eD0006f0b5CCD81Ed5bd15A0c08C',
     },
-    token: tokens.matic,
+    token: tokens.cake,
     quoteToken: tokens.wmatic,
   },
 ]

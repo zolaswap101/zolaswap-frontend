@@ -1,5 +1,6 @@
 import { MenuEntry } from 'packages/uikit'
 import { ContextApi } from 'contexts/Localization/types'
+import { BASE_BSC_SCAN_URL } from 'config'
 
 const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
   // {
@@ -40,11 +41,11 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
   //   icon: 'PredictionsIcon',
   //   href: '/prediction',
   // },
-  {
-    label: t('Lottery'),
-    icon: 'TicketIcon',
-    href: '/lottery',
-  },
+  // {
+  //   label: t('Lottery'),
+  //   icon: 'TicketIcon',
+  //   href: '/lottery',
+  // },
   // {
   //   label: t('Collectibles'),
   //   icon: 'NftIcon',
@@ -97,23 +98,31 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
       // },
       {
         label: t('Github'),
-        href: 'https://github.com/zolaswap-frontend',
+        href: 'https://github.com/wagyuswapapp',
       },
-      //  {
-      //    label: t('Cross chain swapz'),
-      //    href: 'https://cross2.swapz.app',
-      //  },
+      {
+        label: t('Cross chain swapz'),
+        href: 'https://cross2.swapz.app',
+      },
       {
         label: t('Docs'),
-        href: 'https://docs.zolaswap.app/zolaswap/',
+        href: 'https://docs.wagyuswap.app/wagyuswap/',
       },
       {
         label: t('Blog'),
-        href: 'https://medium.com/@zolaswap.app',
+        href: 'https://medium.com/@wagyuswap.app',
       },
       {
         label: t('Support'),
-        href: 'mailto:support@zolaswap.app',
+        href: 'mailto:support@wagyuswap.app',
+      },
+      {
+        label: t('Telegram'),
+        href: 'http://t.me/wagyuswapofficial',
+      },
+      {
+        label: t('Velascan'),
+        href: BASE_BSC_SCAN_URL,
       },
       // {
       //   label: t('Merch'),
