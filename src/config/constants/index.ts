@@ -3,7 +3,7 @@ import { mainnetTokens, testnetTokens } from './tokens'
 import addresses from './addresses.json'
 
 // export const ROUTER_ADDRESS = addresses[process.env.REACT_APP_CHAIN_ID].ZolaRouter
-export const ROUTER_ADDRESS = addresses[137].ZolaRouter
+export const ROUTER_ADDRESS = addresses[137].ZohlaRouter
 
 // a list of tokens by chain
 type ChainTokenList = {
@@ -45,7 +45,6 @@ export const CUSTOM_BASES: { [chainId in ChainId]?: { [tokenAddress: string]: To
 export const SUGGESTED_BASES: ChainTokenList = {
   [ChainId.MAINNET]: [
     mainnetTokens.wmatic,
-    mainnetTokens.lazermoon,
     mainnetTokens.usdc,
     mainnetTokens.matic,
     mainnetTokens.cake,
@@ -61,7 +60,6 @@ export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
     mainnetTokens.cake,
     mainnetTokens.wmatic,
     mainnetTokens.quick,
-    mainnetTokens.lazermoon,
     mainnetTokens.shib,
     mainnetTokens.kom,
     mainnetTokens.banana,

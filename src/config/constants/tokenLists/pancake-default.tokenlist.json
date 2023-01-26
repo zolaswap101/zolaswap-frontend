@@ -11,9 +11,9 @@
   "keywords": ["zolaswap", "default"],
   "tokens": [
     {
-      "name": "Zola Token",
-      "symbol": "ZOLA",
-      "address": "0x8a226293bC6f697A681B0b29f825c149655fEC2d",
+      "name": "Zohla Token",
+      "symbol": "ZOHLA",
+      "address": "0xd9B2AA5586B32ed90A69f3456D879FEC69b1463B",
       "chainId": 137,
       "decimals": 18,
       "logoURI": "https://github.com/mrandall101/assets/blob/master/blockchains/polygon/assets/0x8a226293bC6f697A681B0b29f825c149655fEC2d/logo.png?raw=true"
@@ -21,7 +21,7 @@
     {
       "name": "Wrapped MATIC",
       "symbol": "WMATIC",
-      "address": "0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270",
+      "address": "0x9b9D48a6F8742e2515d384796B5bbbf07948E402",
       "chainId": 137,
       "decimals": 18,
       "logoURI": "https://github.com/mrandall101/assets/blob/master/blockchains/polygon/assets/0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270/logo.png?raw=true"

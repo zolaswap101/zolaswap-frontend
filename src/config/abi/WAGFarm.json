@@ -2,12 +2,12 @@
   {
     "inputs": [
       {
-        "internalType": "contract ZOLAToken",
+        "internalType": "contract WAGToken",
         "name": "_cake",
         "type": "address"
       },
       {
-        "internalType": "contract ZOLAStake",
+        "internalType": "contract WAGStake",
         "name": "_syrup",
         "type": "address"
       },
@@ -165,7 +165,7 @@
     "name": "cake",
     "outputs": [
       {
-        "internalType": "contract ZOLAToken",
+        "internalType": "contract WAGToken",
         "name": "",
         "type": "address"
       }
@@ -471,7 +471,7 @@
     "name": "syrup",
     "outputs": [
       {
-        "internalType": "contract ZOLAStake",
+        "internalType": "contract WAGStake",
         "name": "",
         "type": "address"
       }

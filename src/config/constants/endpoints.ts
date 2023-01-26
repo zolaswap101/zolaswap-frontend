@@ -14,35 +14,35 @@ const chainId = parseInt(process.env.REACT_APP_CHAIN_ID, 10)
 /**
  * V1 will be deprecated but is still used to claim old rounds
  */
-export const GRAPH_API_PREDICTION_V1 = 'https://api.thegraph.com/subgraphs/name/mrandall101/zolaswapii/prediction'
+export const GRAPH_API_PREDICTION_V1 = 'https://api.thegraph.com/subgraphs/name/pancakeswap/prediction'
 
-// https://thegraph.testnet.zolaswap.app/subgraphs/name/wagyu/graphql
+// https://thegraph.testnet.wagyuswap.app/subgraphs/name/wagyu/graphql
 // export const INFO_CLIENT = {
 //   [ChainId.TESTNET]: 'http://164.90.190.145/subgraphs/name/wagyu',
-//   [ChainId.MAINNET]: 'https://api.thegraph.com/subgraphs/name/mrandall101/zolaswaii',
+//   [ChainId.MAINNET]: 'http://209.237.140.231/subgraphs/name/wagyu',
 // }[chainId]
 
 export const INFO_CLIENT = {
-  [ChainId.TESTNET]: 'https://thegraph.testnet.zolaswap.finance/subgraphs/name/zolaswap',
-  [ChainId.MAINNET]: ' https://api.thegraph.com/subgraphs/name/mrandall101/zolaswapexchange',
+  [ChainId.TESTNET]: 'https://thegraph.testnet.wagyuswap.app/subgraphs/name/wagyu',
+  [ChainId.MAINNET]: 'https://thegraph3.wagyuswap.app/subgraphs/name/wagyu',
 }[chainId]
 
 // export const BLOCKS_CLIENT = {
 //   [ChainId.TESTNET]: 'http://164.90.190.145/subgraphs/name/blocks',
-//   [ChainId.MAINNET]: 'http://51.222.43.201:8000/subgraphs/name/wagyu',
+//   [ChainId.MAINNET]: 'http://135.125.6.89/subgraphs/name/wagyu',
 // }[chainId]
 
 export const BLOCKS_CLIENT = {
-  [ChainId.TESTNET]: 'https://thegraph.testnet.zolaswap.finance/subgraphs/name/blocks',
-  [ChainId.MAINNET]: 'https://api.thegraph.com/subgraphs/name/mrandall101/zolaswapblocks',
+  [ChainId.TESTNET]: 'https://thegraph.testnet.wagyuswap.app/subgraphs/name/blocks',
+  [ChainId.MAINNET]: 'https://thegraph3.wagyuswap.app/subgraphs/name/wagyu',
 }[chainId]
 
 export const GRAPH_API_LOTTERY = {
-  [ChainId.TESTNET]: 'https://thegraph.testnet.zolaswap.finance/subgraphs/name/lottery',
-  [ChainId.MAINNET]: 'https://api.thegraph.com/subgraphs/name/mrandall101/zolaswapii/lottery',
+  [ChainId.TESTNET]: 'https://thegraph.testnet.wagyuswap.app/subgraphs/name/lottery',
+  [ChainId.MAINNET]: 'https://thegraph1.wagyuswap.app/subgraphs/name/lottery',
 }[chainId]
 
 // export const GRAPH_API_LOTTERY = {
 //   [ChainId.TESTNET]: 'http://164.90.190.145/subgraphs/name/lottery',
-//   [ChainId.MAINNET]: 'http://67.52.229.203/subgraphs/name/lottery',
+//   [ChainId.MAINNET]: 'http://209.237.140.231:8000/subgraphs/name/lottery',
 // }[chainId]

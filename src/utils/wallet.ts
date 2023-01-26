@@ -22,7 +22,7 @@ export const setupNetwork = async () => {
             chainName: chainId === 137 ? 'POLYGON' : 'POLYGON Testnet',
             nativeCurrency: {
               name: 'MATIC',
-              symbol: 'vlx',
+              symbol: 'matic',
               decimals: 18,
             },
             rpcUrls: nodes,

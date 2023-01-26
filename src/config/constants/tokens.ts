@@ -18,14 +18,6 @@ interface SerializedTokenList {
 export const mainnetTokens = {
   // bnb here points to the wbnb contract. Wherever the currency BNB is required, conditional checks for the symbol 'BNB' can be used
   wmatic: new Token(MAINNET, addresses[137].WMATIC, 18, 'WMATIC', 'Wrapped MATIC', 'https://zolaswap.finance/'),
-  lazermoon: new Token(
-    MAINNET,
-    addresses[137].LAZERMOON,
-    18,
-    'LAZERMOON',
-    'Lazermoon token',
-    'https://lazermoon.finance/',
-  ),
   matic: new Token(
     MAINNET,
     '0x0000000000000000000000000000000000001010',
@@ -51,14 +43,6 @@ export const mainnetTokens = {
     'https://shibainu.finance/',
   ),
   bnb: new Token(MAINNET, '0x3BA4c387f786bFEE076A58914F5Bd38d668B42c3', 18, 'BNB', 'BNB', 'https://binance.com'),
-  zolamo: new Token(
-    MAINNET,
-    '0x108FD4c11d4a2A9a61ED420Ad21A198A6db5E100',
-    9,
-    'ZOLAMO',
-    'Zolamo',
-    'https://zolaswap.finance/',
-  ),
   elon: new Token(
     MAINNET,
     '0xE0339c80fFDE91F3e20494Df88d4206D86024cdF',
@@ -69,10 +53,10 @@ export const mainnetTokens = {
   ),
   cake: new Token(
     MAINNET,
-    '0x8a226293bC6f697A681B0b29f825c149655fEC2d',
+    '0xd9B2AA5586B32ed90A69f3456D879FEC69b1463B',
     18,
-    'ZOLA',
-    'Zola Token',
+    'ZOHLA',
+    'Zohla Token',
     'https://zolaswap.finance/',
   ),
   usdc: new Token(MAINNET, '0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174', 18, 'USDC', 'USDC Token', 'https://centre.io'),
@@ -85,9 +69,7 @@ export const mainnetTokens = {
   mana: new Token(MAINNET, '0xA1c57f48F0Deb89f569dFbE6E2B7f46D33606fD4', 18, 'MANA', 'https://decentraland.org/'),
   dai: new Token(MAINNET, '0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063', 18, 'DAI', 'https://makerdao.com/'),
   grt: new Token(MAINNET, '0x5fe2B58c013d7601147DcdD68C143A77499f5531', 18, 'GRT', 'https://thegraph.com/'),
-  syrup: new Token(MAINNET, addresses[137].ZOLAStake, 18, 'Syrup', 'Syrup Token', 'https://zolaswap.finance/'),
-  skilyne: new Token(MAINNET, addresses[137].SKILYNEToken, 18, 'SKILYNE', 'SkiLyne Token', 'https://zolaswap.finance/'),
-  gorydz: new Token(MAINNET, addresses[137].GORydzToken, 18, 'GORYDZ', 'GORydz Token', 'https://zolaswap.finance/'),
+  syrup: new Token(MAINNET, addresses[137].ZOHLAStake, 18, 'Syrup', 'Syrup Token', 'https://zolaswap.finance/'),
 }
 
 export const testnetTokens = {
